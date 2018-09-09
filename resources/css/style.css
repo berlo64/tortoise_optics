@@ -1,0 +1,39 @@
+/* General style */
+
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4px;
+}
+
+.container {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Header style */
+
+.header {
+  background-color: #5F9EA0;
+  color: #FFFFFF;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.header img {
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+
+.header li {
+  margin: 1rem 2rem 1rem 0;
+}
+
+/* Main banner style */
+
+.main-banner {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+}
