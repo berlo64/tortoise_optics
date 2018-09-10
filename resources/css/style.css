@@ -17,11 +17,16 @@ body {
   margin: 0 auto;
 }
 
+.header,
+.philosophy h3,
+.appointments h3 {
+  background-color: #5F9EA0;
+  color: #FFFFFF;
+}
+
 /* Header style */
 
 .header {
-  background-color: #5F9EA0;
-  color: #FFFFFF;
   justify-content: space-between;
   flex-wrap: nowrap;
   position: relative;
@@ -73,4 +78,79 @@ body {
   padding: 1.5rem 5rem;
 }
 
-/* Content style */
+/* Content style (Process) */
+
+.content {
+  position: relative;
+  top: 26.6rem;
+}
+
+.process {
+  flex-basis: 960px;
+  justify-content: center;
+}
+
+.icon {
+  height: 8rem;
+  width: 6rem;
+  box-sizing: border-box;
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon h4 {
+  text-align: center;
+}
+
+.exam img {
+  width: 3.5rem;
+}
+
+.custom img,
+.delivery img {
+  width: 5rem;
+}
+
+/* Content style (Identity) */
+
+.identity {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.philosophy,
+.appointments {
+  width: 45%;
+}
+
+.philosophy {
+  margin-right: 10%;
+}
+
+.philosophy h3,
+.appointments h3 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 4rem 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+
+}
+
+/* Footer style */
+
+.footer {
+  position: relative;
+  top: 26.6rem;
+  background-color: #F0FFFF;
+}
+
+.footer img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
+}
