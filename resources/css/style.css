@@ -30,6 +30,18 @@ body {
   color: #FFFFFF;
 }
 
+@media only screen and (min-width: 500px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+}
+
 /* Header style */
 
 .header {
@@ -58,7 +70,18 @@ body {
 
   div.navigation {
     margin-left: 2.5%;
-  }  
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container.logo,
+   div.navigation {
+    margin: 0 5%;
+  }
+
+  .header li.mobile {
+    margin-right: 0
+  }
 }
 
 .header img {
@@ -99,6 +122,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .main-banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+}
+
 .container.banner {
   justify-content: flex-end;
 }
@@ -136,16 +166,48 @@ body {
   }
 }
 
-/* Content style (Process) */
+@media only screen and (max-width: 500px) {
+  .banner h1 {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    top: 12.4rem;
+    padding: 1rem 0 1rem 0;
+    margin: 0 0;
+    width: 100%;
+  }
+}
+
+/* Content style (General) */
 
 .content {
   position: relative;
   top: 26.6rem;
 }
 
+@media only screen and (max-width: 770px) {
+  .content {
+    top: 18.6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    top: 13.60rem;
+  }
+}
+
+/* Content style (Process) */
+
 .process {
   flex-basis: 960px;
   justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .process {
+    flex-direction: column;
+  }
 }
 
 .icon {
@@ -163,6 +225,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+  .icon h4 {
+    font-size: 0.77rem;
+  }
+}
+
 .exam img {
   width: 3.5rem;
 }
@@ -170,6 +238,29 @@ body {
 .custom img,
 .delivery img {
   width: 5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  div.exam {
+    margin: 3.77rem 0 0 0;
+    height: 7rem;
+  }
+
+  div.custom {
+    margin: 1.54rem 0;
+  }
+
+  div.delivery {
+    margin: 0 0 3.77rem 0;
+  }
+
+  div.custom {
+    height: 4.5rem;
+  }
+
+  div.delivery {
+    height: 5rem;
+  }
 }
 
 /* Content style (Identity) */
@@ -181,6 +272,13 @@ body {
   margin-bottom: 5rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .identity {
+    flex-direction: column;
+    margin: 0 0 5rem 0;
+  }
+}
+
 .philosophy,
 .appointments {
   width: 45%;
@@ -188,6 +286,18 @@ body {
 
 .philosophy {
   margin-right: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+  div.philosophy,
+  div.appointments {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  div.philosophy {
+    margin-bottom: 4rem;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -205,7 +315,21 @@ body {
   font-weight: bold;
   padding: 0.5rem 4rem 0.5rem 1.25rem;
   margin-bottom: 1rem;
+}
 
+@media only screen and (max-width: 500px) {
+  .philosophy h3,
+  .appointments h3 {
+    width: 100%;
+    margin: 0 0;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .identity p {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+  }
 }
 
 /* Footer style */
@@ -216,7 +340,31 @@ body {
   background-color: #F0FFFF;
 }
 
+@media only screen and (max-width: 500px) {
+  .container.footer {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer {
+    top: 13.60rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .footer {
+    top: 18.6rem;
+  }
+}
+
 .footer img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer img {
+    padding: 4rem 0;
+  }
 }
