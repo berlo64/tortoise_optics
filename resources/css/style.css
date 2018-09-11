@@ -17,6 +17,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .header,
 .philosophy h3,
 .appointments h3 {
@@ -34,8 +40,25 @@ body {
   z-index: 2;
 }
 
+@media only screen and (max-width: 770px) {
+  .header {
+    top: 0;
+    box-sizing: border-box;
+  }
+}
+
 .container.logo {
   margin: 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .container.logo {
+    margin: 0 2.5%;
+  }
+
+  div.navigation {
+    margin-left: 2.5%;
+  }  
 }
 
 .header img {
@@ -43,8 +66,20 @@ body {
   margin: 0 1rem 0 2rem;
 }
 
+@media only screen and (max-width: 770px) {
+  .header img {
+    margin-left: 0rem;
+  }
+}
+
 .header li {
   margin: 1rem 2rem 1rem 0;
+}
+
+@media only screen and (max-width: 770px) {
+  ul.container {
+    flex-wrap: nowrap;
+  }
 }
 
 /* Main banner style */
@@ -58,6 +93,12 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 770px) {
+  .main-banner {
+    height: 22rem;
+  }
+}
+
 .container.banner {
   justify-content: flex-end;
 }
@@ -68,6 +109,13 @@ body {
   padding-left: 3rem;
 }
 
+@media only screen and (max-width: 770px) {
+  .banner {
+    box-sizing: border-box;
+    padding-left: 0;
+  }
+}
+
 .banner h1 {
   background-color: #FFFFFF;
   font-weight: bold;
@@ -76,6 +124,16 @@ body {
   position: relative;
   top: 14.4rem;
   padding: 1.5rem 5rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .banner h1 {
+    font-size: 1.33rem;
+    position: relative;
+    top: 8.4rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
 }
 
 /* Content style (Process) */
@@ -130,6 +188,14 @@ body {
 
 .philosophy {
   margin-right: 10%;
+}
+
+@media only screen and (max-width: 770px) {
+  .philosophy,
+  .appointments {
+    width: 40%;
+    margin: 0 5%;
+  }
 }
 
 .philosophy h3,
